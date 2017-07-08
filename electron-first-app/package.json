@@ -1,0 +1,11 @@
+{
+  "name": "electron-first-app",
+  "version": "1.0.0",
+  "description": "first electron app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pppurple",
+  "license": "MIT"
+}
