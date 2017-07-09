@@ -1,0 +1,2 @@
+.\node_modules\.bin\babel --plugins transform-react-jsx .\js\useJSX.js -o .\js\dist\useJSX.js
+

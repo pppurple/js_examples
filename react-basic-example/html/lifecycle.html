@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hello react</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script>
+      var MyComponent = React.createClass({
+        getInitialState:function() {
+          return {count: 0};
+        },
+        render: function() {
+          return React.DOM.div(
+            null,
+            React.DOM.input({
+              type:'text',
+              onChange: this.doChange
+            }),
+            React.DOM.span(null, this.state.count)
+          );
+        },
+        doChange:function(e) {
+          this.setState({count: e.target.value.length});
+        },
+        componentDidMount:function() {
+          console.log('done mount.');
+        },
+        componentWillUpdate:function(nextProps, nextState) {
+          console.log('state updated: ', nextState);
+        }
+      });
+      ReactDOM.render(
+        React.createElement(MyComponent),
+        document.getElementById('main')
+      );
+    </script>
+  </body>
+</html>
