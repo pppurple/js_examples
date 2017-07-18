@@ -1,0 +1,68 @@
+.root {
+  margin: 0 auto;
+  width: 500px;
+  padding: 30px 45px;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.image > div {
+  flex: 1;
+}
+
+.image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 20px #939293;
+}
+
+.form {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.form input {
+  flex: 1;
+}
+
+.form button {
+  flex-basis: 70px;
+  margin-left: 15px;
+}
+
+.form .sending {
+  flex-basis: 70px;
+  margin-left: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #939293;
+}
+
+.form .sending * {
+  animation-duration: 3s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

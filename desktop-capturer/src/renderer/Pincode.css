@@ -1,0 +1,15 @@
+.root {
+  margin: 0 auto;
+  padding: 15px 30px;
+  width: 100%;
+}
+
+.buttons {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.buttons button {
+  min-width: 80px;
+  margin-left: 10px;
+}
