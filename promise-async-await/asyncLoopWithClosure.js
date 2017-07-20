@@ -11,7 +11,7 @@ let loop = (max, callback) => {
   };
 };
 
-let funcWithCallback = (datas, callback) => {
+let funcWithClosure = (datas, callback) => {
   let myLoop = loop(datas.length, callback);
   for (let i = 0; i < datas.length; i++) {
     let data = datas[i];
@@ -27,4 +27,4 @@ let doAsyncJob = (data, loop) => {
   }, data);
 };
 
-funcWithCallback(datas, () => console.log("all done!!"));
+funcWithClosure(datas, () => console.log("all done!!"));
