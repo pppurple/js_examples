@@ -5,7 +5,6 @@ let func = (datas) => {
     let data = datas[i];
     doAsyncJob(data);
   }
-  console.log("all done!!");
 };
 
 let doAsyncJob = (data) => {
